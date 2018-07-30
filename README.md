@@ -1,4 +1,4 @@
-#SpringBoot2.0
+#SpringBoot2.X
 
 ##目前实现：
 
@@ -12,3 +12,4 @@
 8.redis<br/>
 9.定时任务Task,多线程<br/>
 10.拦截器<br/>
+11.整合redis+shiro实现集群的权限管理
