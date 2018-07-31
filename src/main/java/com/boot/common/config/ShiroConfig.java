@@ -63,12 +63,11 @@ public class ShiroConfig {
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
 		filterChainDefinitionMap.put("/login","anon");
 		filterChainDefinitionMap.put("/doLogin","anon");
-		filterChainDefinitionMap.put("/app/**", "anon");
-		filterChainDefinitionMap.put("/bootstrap-3.3.7/**", "anon");
-		filterChainDefinitionMap.put("/jquery-3.3.1/**", "anon");
-		filterChainDefinitionMap.put("/layui/**", "anon");
-		filterChainDefinitionMap.put("/pages/**", "anon");
-		filterChainDefinitionMap.put("/plugins/**", "anon");
+		filterChainDefinitionMap.put("/js/**", "anon");
+		filterChainDefinitionMap.put("/css/**", "anon");
+		filterChainDefinitionMap.put("/fonts/**", "anon");
+		filterChainDefinitionMap.put("/img/**", "anon");
+		filterChainDefinitionMap.put("/docs/**", "anon");
 		filterChainDefinitionMap.put("/", "anon");
 		filterChainDefinitionMap.put("/**", "authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);

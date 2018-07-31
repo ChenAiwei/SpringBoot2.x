@@ -20,6 +20,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(value = Exception.class)
 	@ResponseBody
 	public AppJSONResult defaultErrorHandler(HttpServletRequest request , HttpServletResponse response, Exception e) {
+
 		AppJSONResult result = new AppJSONResult();
 		result.setMsg(e.getMessage());
 		result.setStatus(-1);

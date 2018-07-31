@@ -8,15 +8,14 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class TestInterceptor implements HandlerInterceptor {
-    private final  static Logger log = LoggerFactory.getLogger(TestInterceptor.class);
+public class GlobalInterceptor implements HandlerInterceptor {
+    private final  static Logger log = LoggerFactory.getLogger(GlobalInterceptor.class);
     /**
      * 在请求处理之前进行调用（Controller方法调用之前）
      */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
                              Object object) throws Exception {
-
         return true;
     }
 
@@ -29,6 +28,7 @@ public class TestInterceptor implements HandlerInterceptor {
             throws Exception {
         // TODO Auto-generated method stub
 
+
     }
 
     /**
@@ -40,6 +40,5 @@ public class TestInterceptor implements HandlerInterceptor {
                                 Object object, Exception ex)
             throws Exception {
         // TODO Auto-generated method stub
-
     }
 }

@@ -1,7 +1,6 @@
 package com.boot.common.config;
 
-import com.boot.common.interceptor.TestInterceptor;
-
+import com.boot.common.interceptor.GlobalInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -11,6 +10,7 @@ public class WebMvcConfigurer  extends WebMvcConfigurerAdapter {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         super.addInterceptors(registry);
-        registry.addInterceptor(new TestInterceptor()).addPathPatterns("/user/**");
+        //registry.addInterceptor(new TestInterceptor()).addPathPatterns("/user/**");
+		registry.addInterceptor(new GlobalInterceptor());
     }
 }

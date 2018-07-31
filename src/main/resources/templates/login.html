@@ -8,11 +8,11 @@
     <title>BootDo</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link th:href="@{/bootstrap-3.3.7/css/bootstrap.min.css}" rel="stylesheet"/>
-    <link th:href="@{/app/css/font-awesome.css}" rel="stylesheet">
-    <link th:href="@{/app/css/animate.css}" rel="stylesheet">
-    <link th:href="@{/app/css/style.css}" rel="stylesheet">
-    <link th:href="@{/app/css/login.css}" rel="stylesheet">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/css/font-awesome.css}" rel="stylesheet">
+    <link th:href="@{/css/animate.css}" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <link th:href="@{/css/login.css}" rel="stylesheet">
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html"/>
     <![endif]-->
@@ -69,15 +69,15 @@
 </div>
 <script th:inline="javascript"> var ctx = [[@{/}]] ; </script>
 <!-- 全局js -->
-<script th:src="@{/jquery-3.3.1/jquery-3.3.1.js}" type="text/javascript"></script>
-<script th:src="@{/bootstrap-3.3.7/js/bootstrap.min.js}" type="text/javascript"></script>
+<script th:src="@{/js/jquery.min.js}" type="text/javascript"></script>
+<script th:src="@{/js/bootstrap.min.js}" type="text/javascript"></script>
 
 
 <!-- jQuery Validation plugin javascript-->
-<script th:src="@{/plugins/layer/layer.js}" type="text/javascript"></script>
-<script th:src="@{/plugins/ajax-util.js}" type="text/javascript"></script>
-<script th:src="@{/plugins/validate/jquery.validate.min.js}" type="text/javascript"></script>
-<script th:src="@{/plugins/validate/messages_zh.min.js}" type="text/javascript"></script>
+<script th:src="@{/js/plugins/layer/layer.js}" type="text/javascript"></script>
+<script th:src="@{/js/ajax-util.js}" type="text/javascript"></script>
+<script th:src="@{/js/plugins/validate/jquery.validate.min.js}" type="text/javascript"></script>
+<script th:src="@{/js/plugins/validate/messages_zh.min.js}" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("#login").on('click',function(){$("#signupForm").submit();});
